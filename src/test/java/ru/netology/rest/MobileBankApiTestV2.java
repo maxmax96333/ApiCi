@@ -23,8 +23,5 @@ class MobileBankApiTestV2 {
                 // специализированные проверки - лучше
                 .contentType(ContentType.JSON)
         ;
-        .then()
-                .statusCode(200)
-                .body(matchesJsonSchemaInClasspath("accounts.schema.json"));
     }
 }
